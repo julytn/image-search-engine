@@ -1,0 +1,9 @@
+argparse==1.2.1
+clarifai==2.0.18
+configparser==3.5.0
+functools32==3.2.3-2
+future==0.15.2
+jsonschema==2.5.1
+requests==2.11.1
+requirements==0.1
+wsgiref==0.1.2
