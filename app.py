@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, flash
 from forms import SearchForm
 app = Flask(__name__)
-app.secret_key = '123'
+app.secret_key = 'development key'
 
 @app.route('/', methods = ['GET', 'POST'])
 def search():
