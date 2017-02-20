@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+   <body>
+   
+      <h2 style = "text-align: center;">Image Search Engine</h2>
+		
+      {% for message in form.query.errors %}
+         <div style = "text-align: center;">{{ message }}</div>
+      {% endfor %}
+      
+      
+      <form action = "http://localhost:5000/" method = post>
+            
+            {{ form.hidden_tag() }}
+            
+            <div style = "text-align: center; font-size:20px; font-weight:bold;"">
+               {{ form.query }}
+               
+               {{ form.submit }}
+            </div>
+            
+      </form>
+      
+   </body>
+</html>
