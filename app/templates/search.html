@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+ 
+{% block content %}
+   <h2 style="text-align: center;">Image Search Engine</h2>
+      
+      {% if success %}
+         <h4 style="text-align: center;">Here are the 10 most probable images for "{{ form.query.data }}".</h4>
+         <div class="row">
+         {% for img in images %}
+            <div class="col-md-5" style="text-align: center;">
+               <div class="thumbnail" style="text-align: center;">
+                  <a href="{{ img }}">
+                  <img src="{{ img }}">
+                  </a>
+               </div>
+            </div>
+         {% endfor %}
+         </div>      
+
+      {% else %}
+         {% for message in get_flashed_messages() %}
+            <div class="flash">{{ message }}</div>
+         {% endfor %}
+         
+         
+         <form action="{{ url_for('search') }}" method=post>
+               
+               {{ form.hidden_tag() }}
+               
+               <div style="text-align: center;">
+                  {{ form.query }}
+                  
+                  {{ form.submit }}
+               </div>
+               
+         </form>
+      {% endif %}
+{% endblock %}
