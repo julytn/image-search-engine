@@ -23,7 +23,7 @@ def search():
 			return render_template('search.html', form=form)
 		else:
 			result = cs.search(form.query.data)
-			if type(result) is list:
+			if result and type(result) is list:
 				return render_template('search.html', success=True, images=result, form=form)
 			else:
 				flash(result)
