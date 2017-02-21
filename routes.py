@@ -22,8 +22,12 @@ def search():
 			flash('Please enter a search.')
 			return render_template('search.html', form=form)
 		else:
-			images = cs.search(form.query.data)
-			return render_template('search.html', success=True, images=images, form=form)
+			result = cs.search(form.query.data)
+			if type(result) is list:
+				return render_template('search.html', success=True, images=result, form=form)
+			else:
+				flash(result)
+				return render_template('search.html', form=form)
 	elif request.method == 'GET':
 		return render_template('search.html', form=form)
 
