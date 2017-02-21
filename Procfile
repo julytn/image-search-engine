@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: gunicorn image-search-engine:app

@@ -10,6 +10,7 @@ click==6.7
 configparser==3.5.0
 functools32==3.2.3-2
 future==0.15.2
+gunicorn==19.6.0
 itsdangerous==0.24
 jsonschema==2.5.1
 requests==2.11.1
