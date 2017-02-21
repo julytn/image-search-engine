@@ -1,5 +1,0 @@
-#!/home/zoe/Code/image-search-engine/venv/bin/python
-# EASY-INSTALL-SCRIPT: 'clarifai==2.0.18','clarifai'
-__requires__ = 'clarifai==2.0.18'
-import pkg_resources
-pkg_resources.run_script('clarifai==2.0.18', 'clarifai')
