@@ -7,7 +7,7 @@ https://zoesong.herokuapp.com/search
 
 2. Install requirements
   ```
-  $ pip install requirements.txt
+  $ pip install -r requirements.txt
   ```
 
 3. To tag images in images.txt, run:
@@ -20,6 +20,12 @@ https://zoesong.herokuapp.com/search
   python routes.py
   ```
 
+
+### To Do
+* Use config file for API keys and such
+* Initialize ClarifaiApp only once
+* Fix inconsistent indentation in search.html
+* Organize files accoriding to [here](http://charlesleifer.com/blog/structuring-flask-apps-a-how-to-for-those-coming-from-django/)
 
 
 
