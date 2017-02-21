@@ -11,6 +11,3 @@ def search(query, page=1, per_page=10):
 		return "Found 0 images with current search. Please try again."
 
 	return [img.url for img in result]
-
-
-print search('green')
