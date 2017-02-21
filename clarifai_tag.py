@@ -1,7 +1,7 @@
 from clarifai.rest import ClarifaiApp, Image as ClImage
 
 batch_size = 128
-app = ClarifaiApp()
+app = ClarifaiApp('8g-Q8QAGb9ShZ0wknjem0JxNd4oE1Iqi0d-6xPuF', '96BW52C5aZcNdkNNRihOOhSzJzUQxMpBAG0BiMFA')
 
 # get the general-v1.3 model
 model = app.models.get("aaa03c23b3724a16a56b629203edc62c")
