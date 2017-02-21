@@ -24,7 +24,7 @@ https://zoesong.herokuapp.com/search
 ### To Do
 * Use config file for API keys and such
 * Initialize ClarifaiApp only once
-* Fix inconsistent indentation in search.html
+* Add tests following [this](http://flask.pocoo.org/docs/0.12/tutorial/testing/#tutorial-testing)
 * Organize files accoriding to [here](http://charlesleifer.com/blog/structuring-flask-apps-a-how-to-for-those-coming-from-django/)
 
 
