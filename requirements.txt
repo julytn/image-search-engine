@@ -7,3 +7,5 @@ jsonschema==2.5.1
 requests==2.11.1
 requirements==0.1
 wsgiref==0.1.2
+flask
+gunicorn
