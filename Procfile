@@ -1,1 +1,1 @@
-web: gunicorn image-search-engine:app
+web: gunicorn wsgi
